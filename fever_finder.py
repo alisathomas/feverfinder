@@ -15,8 +15,8 @@ import yaml
 import boto3
 
 #importing AWS keys
-os.environ["AWS_ACCESS_KEY_ID"] = 'AKIATSNY2X4AUYJWS4HZ'
-os.environ["AWS_SECRET_ACCESS_KEY"] = '1G97wbFuknEVEyeLSPiH+xs1exXvclDqt1XXl/Lr'
+os.environ["AWS_ACCESS_KEY_ID"] = 'redacted'
+os.environ["AWS_SECRET_ACCESS_KEY"] = 'redacted'
 
 GPIO.setmode(GPIO.BCM)
 
@@ -151,8 +151,8 @@ while (True):
                 camera.close()
                 client = boto3.client(
                     's3',
-                    aws_access_key_id='AKIATSNY2X4AUYJWS4HZ',
-                    aws_secret_access_key='1G97wbFuknEVEyeLSPiH+xs1exXvclDqt1XXl/Lr',
+                    aws_access_key_id='redacted',
+                    aws_secret_access_key='redacted',
                     # aws_session_token=SESSION_TOKEN
                 )
                 testfile = str(Max) + "°F_" + str(today) + "_" + str(current_time) + ".jpg"
